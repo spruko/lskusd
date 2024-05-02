@@ -1,0 +1,6 @@
+node_modules/
+*.log
+texttoimage
+obfuscator
+plugins_Originalnames_encryptednames.texttoimage.vscode
+.git
