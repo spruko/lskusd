@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Installer;
+namespace laravelLara\lskusd\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;

@@ -1,6 +1,6 @@
 <?php
 
-namespace laravelLara\lsktd\Events;
+namespace laravelLara\lskusd\Events;
 
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\InteractsWithSockets;

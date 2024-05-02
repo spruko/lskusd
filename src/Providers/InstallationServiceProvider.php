@@ -2,7 +2,7 @@
 
 // eval(testserviceProvider('installationprovider'));
 
-namespace laravelLara\lsktd\Providers;
+namespace laravelLara\lskusd\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Foundation\Http\Kernel;
@@ -17,7 +17,7 @@ class InstallationServiceProvider extends ServiceProvider
      */
     public function boot(Kernel $kernel)
     {
-        Route::group(['middleware' => 'web', 'namespace' => 'laravelLara\lsktd\App\Http'], function () {
+        Route::group(['middleware' => 'web', 'namespace' => 'laravelLara\lskusd\App\Http'], function () {
             $this->loadRoutesFrom(realpath(dirname(__DIR__) . DIRECTORY_SEPARATOR . '/routes/web.php'));
         });
         $this->loadViewsFrom(realpath(dirname(__DIR__) . DIRECTORY_SEPARATOR . '/resources/views'), 'Installation');
@@ -32,8 +32,7 @@ class InstallationServiceProvider extends ServiceProvider
     }
     protected function loadMiddleware()
     {
-        $this->app['router']->aliasMiddleware('checkinstallation', \laravelLara\lsktd\Http\Middleware\Checkinstallation::class);
-        $this->app['router']->aliasMiddleware('caninstall', \laravelLara\lsktd\Http\Middleware\CanInstall::class);
+        $this->app['router']->aliasMiddleware('caninstall', \laravelLara\lskusd\Http\Middleware\CanInstall::class);
     }
 }
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Middleware\Install;
+namespace laravelLara\lskusd\Http\Middleware\Install;
 
 use Closure;
 use Illuminate\Http\Request;
-use App\Http\Middleware\Install\CanInstall;
+use laravelLara\lskusd\Http\Middleware\Install\CanInstall;
 
 class CanUpdate
 {

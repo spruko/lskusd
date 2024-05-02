@@ -1,12 +1,12 @@
 {
-    "name": "laravel-lara/lsktd",
+    "name": "laravel-lara/lskusd",
     "description": "Description",
     "type": "library",
     "license": "Apache-2.0",
     "autoload": {
         "psr-4": {
-            "laravelLara\\lsktd\\": "src/",
-            "laravelLara\\lsktd\\Console\\Commands\\": "src/Files"
+            "laravelLara\\lskusd\\": "src/",
+            "laravelLara\\lskusd\\Console\\Commands\\": "src/Files"
         },
         "files": [
             "src/utils/Function.php"

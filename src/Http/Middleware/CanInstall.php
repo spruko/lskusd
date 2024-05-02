@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Middleware\Install;
+namespace laravelLara\lskusd\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
 use Redirect;
-
 
 class CanInstall
 {
