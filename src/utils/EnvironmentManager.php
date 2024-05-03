@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Helper\Installer;
+namespace laravelLara\lskusd\utils;
 
 use Exception;
 use Illuminate\Http\Request;

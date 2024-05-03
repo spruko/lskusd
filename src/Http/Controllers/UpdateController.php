@@ -4,9 +4,9 @@ namespace laravelLara\lskusd\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Helper\Installer\InstallFileCreate;
-use App\Helper\Installer\DatabaseManager;
-use App\Helper\Installer\trait\MigrationsHelper;
+use laravelLara\lskusd\utils\DatabaseManager;
+use laravelLara\lskusd\utils\InstallFileCreate;
+use laravelLara\lskusd\utils\trait\MigrationsHelper;
 
 class UpdateController extends Controller
 {

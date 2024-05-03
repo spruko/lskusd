@@ -4,7 +4,7 @@ namespace laravelLara\lskusd\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Helper\Installer\DatabaseManager;
+use laravelLara\lskusd\utils\DatabaseManager;
 
 class DatabaseController extends Controller
 {

@@ -6,10 +6,10 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Validator;
 use DB;
-use App\Helper\Installer\EnvironmentManager;
 use App\Events\Install\EnivornmentManagerEvents;
-use App\Helper\Installer\trait\ApichecktraitHelper;
 use App\Models\User;
+use laravelLara\lskusd\utils\EnvironmentManager;
+use laravelLara\lskusd\utils\trait\ApichecktraitHelper;
 
 class EnvironmentController extends Controller
 {

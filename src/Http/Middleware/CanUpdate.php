@@ -5,10 +5,11 @@ namespace laravelLara\lskusd\Http\Middleware\Install;
 use Closure;
 use Illuminate\Http\Request;
 use laravelLara\lskusd\Http\Middleware\Install\CanInstall;
+use laravelLara\lskusd\utils\trait\MigrationsHelper;
 
 class CanUpdate
 {
-    use \App\Helper\Installer\trait\MigrationsHelper;
+    use MigrationsHelper;
     /**
      * Handle an incoming request.
      *

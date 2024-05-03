@@ -4,7 +4,7 @@ namespace laravelLara\lskusd\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Helper\Installer\RequirementChecker;
+use laravelLara\lskusd\utils\RequirementChecker;
 
 class RequirementController extends Controller
 {

