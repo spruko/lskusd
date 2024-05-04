@@ -1,4 +1,5 @@
-@extends('installer.layouts.InstallerMaster')
+{{-- @extends('installer.layouts.InstallerMaster') --}}
+@extends('Installation::installer.layouts.InstallerMaster')
 
 @section('template_title')
     {{ trans('Welcome') }}

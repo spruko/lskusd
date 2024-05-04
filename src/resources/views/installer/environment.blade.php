@@ -1,4 +1,4 @@
-@extends('installer.layouts.InstallerMaster')
+@extends('Installation::installer.layouts.InstallerMaster')
 
 @section('template_title')
     {{ trans('Step 3 | Environment Settings') }}

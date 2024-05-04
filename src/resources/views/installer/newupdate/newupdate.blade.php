@@ -1,4 +1,4 @@
-@extends('layouts.updatemaster')
+@extends('Installation::installer.layouts.updatemaster')
 @section('title')
     {{ trans('Update version') }} {{$version}}
 @endsection
@@ -7,7 +7,7 @@
 @section('container')
         <form method="get" action="{{route('admin.thirdupdate',$version)}}" class="tabs-wrap">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
-           
+
             <div class="row">
 
                 <div class="buttons">

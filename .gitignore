@@ -4,3 +4,5 @@ texttoimage
 obfuscator
 plugins_Originalnames_encryptednames.texttoimage.vscode
 .git
+src-decrypted
+.vscode

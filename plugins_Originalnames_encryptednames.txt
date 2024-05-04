@@ -1,45 +1,34 @@
 
 
 
-Console/Commands => AutoCloseTicket.php                      ->       Files => AutomaticTicketClosure.php
-Console/Commands => AutoNotificationDelete.php               ->       Files => NotificationPurge.php
-Console/Commands => AutoOverdueTicket.php                    ->       Files => OverdueTicketProcessing.php
+Console/Commands => AutoCloseTicket.php                      ->       Files => EndTicketProcess.php
+Console/Commands => AutoNotificationDelete.php               ->       Files => AutoNotifyErase.php
+Console/Commands => AutoOverdueTicket.php                    ->       Files => LateAutoTicket.php
 Console/Commands => AutoResponseTicket.php                   ->       Files => AutoTicketResponse.php
-Console/Commands => CustomerAutoDelete.php                   ->       Files => CustomerDataPurge.php
+Console/Commands => CustomerAutoDelete.php                   ->       Files => AutoPurgeClient.php
 Console/Commands => EmailtoTicket.php                        ->       Files => EmailToTicketConverter.php
-Console/Commands => TrashedTicketsAutoDelete.php             ->       Files => AutomatedTrashedTicketPurge.php
-Console/Commands => UpdateData.php                           ->       Files => DataUpdater.php
+Console/Commands => livechatAutoSolve.php                    ->       Files => ChatResolveAutomate.php
+Console/Commands => TrashedTicketsAutoDelete.php             ->       Files => DiscardedTicketsAutoPurge.php
+Console/Commands => UpdateData.php                           ->       Files => RefreshData.php
 
 
-Events => EnvironmentManagementEvents               ->       EnvironmentEvents.php
+trait => ApichecktraitHelper.php                    ->       TraitCheckHelperAPI.php
+trait => Function.php                               ->       Operation.php
 
-trait => ApichecktraitHelper.php                    ->       ApiCheckHelper.php
-trait => MigrationHelper.php                        ->       MigrationHelper.php
-trait => DatabaseManager.php                        ->       DatabaseManagement.php
-trait => EnvironmentManagement.php                  ->       EnvironmentManager.php
-trait => FinalManager.php                           ->       FinalManager.php
-trait => Function.php                               ->       CustomFunctions.php
-trait => InstallFileCreate.php                      ->       InstallFileCreator.php
-trait => PermissionsChecker.php                     ->       PermissionChecker.php
-trait => RequirementChecker.php                     ->       RequirementChecker.php
+Controller => DatabaseController.php                ->       DataHandlerController.php
+Controller => EnvironmentController.php             ->       EcoControlHubController.php
+Controller => PermissionsController.php             ->       AccessManagerController.php
+Controller => RequirementController.php             ->       NecessityHandlerController.php
+Controller => UpdateController.php                  ->       ModifyManagerController.php
+Controller => WelcomeController.php                 ->       SaluteControllerController.php
 
-Controller => DatabaseController.php                ->       DatabaseOperationController.php
-Controller => EnvironmentController.php             ->       EnvironmentOperationController.php
-Controller => PermissionsController.php             ->       PermissionsOperationController.php
-Controller => RegisterController.php                ->       UserRegistrationController.php
-Controller => RequirementController.php             ->       RequirementController.php
-Controller => UpdateController.php                  ->       DataUpdateController.php
-Controller => WelcomeController.php                 ->       WelcomeController.php
+Middleware => CanInstall.php                        ->       InstallAbility.php
+Middleware => Checkinstallations.php                ->       InspectDeployments.php  
 
-Middleware => CanInstall.php                        ->       InstallationPermissionCheck.php
-Middleware => Checkinstallations.php                ->       InstallationStatusCheck.php  
+Providers => InstallationProvider.php               ->       SetupSupplier.php  
 
-Jobs => MailSend.php                                ->       SendMailJob.php
-Jobs => SendEmails.php                              ->       EmailSenderJob.php
+routes => installer.php                             ->       Deployer.php
+routes => method.php                                ->       Procedure.php
+routes => web.php                                   ->       web.php
 
-Providers => InstallationProvider.php               ->       InstallationServiceProvider.php  
-
-routes => installtion.php                           ->       installation_routes.php
-routes => web.php                                   ->       web_routes.php
-
-customhelper.php                                    ->       custom_helper.php
+customhelper.php                                    ->       RandomAid.php

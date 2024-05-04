@@ -1,4 +1,4 @@
-@extends('layouts.updatemaster')
+@extends('Installation::installer.layouts.updatemaster')
 
 @section('title')
     {{ trans('Verify your purchase code') }}

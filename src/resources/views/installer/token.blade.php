@@ -1,4 +1,4 @@
-@extends('installer.layouts.UpdateMaster')
+@extends('Installation::installer.layouts.UpdateMaster')
 
 @section('title')
     {{ trans('Verify Token') }}

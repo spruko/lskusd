@@ -1,4 +1,4 @@
-@extends('layouts.adminrelatemaster')
+@extends('Installation::installer.layouts.adminrelatemaster')
 @section('title')
     {{ trans('Token Generation') }}
 @endsection

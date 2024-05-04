@@ -1,4 +1,4 @@
-@extends('installer.layouts.UpdateMaster')
+@extends('Installation::installer.layouts.UpdateMaster')
 
 @section('title', trans('installer_messages.updater.welcome.title'))
 
