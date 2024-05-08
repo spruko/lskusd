@@ -17,6 +17,7 @@ trait => Function.php                               ->       Operation.php
 
 Controller => DatabaseController.php                ->       DataHandlerController.php
 Controller => EnvironmentController.php             ->       EcoControlHubController.php
+Controller => AddonController.php                   ->       ExtensionController.php
 Controller => PermissionsController.php             ->       AccessManagerController.php
 Controller => RequirementController.php             ->       NecessityHandlerController.php
 Controller => UpdateController.php                  ->       ModifyManagerController.php
