@@ -100,7 +100,7 @@
             <div class="form-group">
                 <label class="form-label">Upload File</label>
                 <div class="input-group file-browser">
-                    <input type="file" class="form-control" name="sql_file">
+                    <input type="file" class="form-control" name="sql_file" style="height: 22px">
                 </div>
             </div>
             <br>

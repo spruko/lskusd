@@ -1,34 +1,29 @@
 @extends('Installation::installer.layouts.UpdateMaster')
 
 @section('title')
-    {{ trans('Verify Token') }}
+    {{ trans('Add Purchasecode') }}
 @endsection
 
 @section('container')
 
-    <div class="d-flex justify-content-end">
-        <a href="{{ route('SprukoAppInstaller::addnewpurchasecode') }}">Add New Purchasecode</a>
-    </div>
-
     <p class="fs-12 text-center">
-        {{ 'Please enter your token' }}
+        {{ 'Please enter your Purchasecode' }}
     </p>
 
-    <form method="post" action="{{ route('SprukoAppInstaller::verifytoken') }}" class="tabs-wrap">
+    <form method="post" action="{{ route('SprukoAppInstaller::verifypurchasecode') }}" class="tabs-wrap">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div class="row">
-            <input style="display: none" name="envato_purchasecode" value="{{ $envato_purchasecode }}">
-            <div class="form-group col-6 {{ $errors->has('app_token') ? ' has-error ' : '' }}">
-                <label for="app_token">
-                    {{ trans('Enter Your Token') }}
+            <div class="form-group col-6 {{ $errors->has('app_purchasecode') ? ' has-error ' : '' }}">
+                <label for="app_purchasecode">
+                    {{ trans('Enter Your Purchasecode') }}
                     <span class="text-red">*</span>
                 </label>
-                <input type="text" name="app_token" id="app_token" value=""
+                <input type="text" name="app_purchasecode" id="app_purchasecode" value=""
                     placeholder="{{ trans('Enter Your token') }}" />
-                @if ($errors->has('app_token'))
+                @if ($errors->has('app_purchasecode'))
                     <span class="error-block">
                         <i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i>
-                        {{ $errors->first('app_token') }}
+                        {{ $errors->first('app_purchasecode') }}
                     </span>
                 @endif
             </div>
