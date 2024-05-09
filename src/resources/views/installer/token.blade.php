@@ -6,10 +6,6 @@
 
 @section('container')
 
-    <div class="d-flex justify-content-end">
-        <a href="{{ route('SprukoAppInstaller::addnewpurchasecode') }}">Add New Purchasecode</a>
-    </div>
-
     <p class="fs-12 text-center">
         {{ 'Please enter your token' }}
     </p>

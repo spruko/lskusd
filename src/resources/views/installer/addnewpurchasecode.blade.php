@@ -19,7 +19,7 @@
                     <span class="text-red">*</span>
                 </label>
                 <input type="text" name="app_purchasecode" id="app_purchasecode" value=""
-                    placeholder="{{ trans('Enter Your token') }}" />
+                    placeholder="{{ trans('Enter Your Purchasecode') }}" />
                 @if ($errors->has('app_purchasecode'))
                     <span class="error-block">
                         <i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i>
