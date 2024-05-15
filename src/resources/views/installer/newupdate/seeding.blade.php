@@ -1,4 +1,4 @@
-@extends('Installation::installer.layouts.updatemaster')
+@extends('Installation::installer.layouts.UpdateMaster')
 
 @section('title')
     {{ trans('Application Updated') }}
