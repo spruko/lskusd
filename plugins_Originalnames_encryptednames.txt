@@ -24,7 +24,7 @@ Controller => UpdateController.php                  ->       ModifyManagerContro
 Controller => WelcomeController.php                 ->       SaluteControllerController.php
 
 Middleware => CanInstall.php                        ->       InstallAbility.php
-Middleware => Checkinstallations.php                ->       InspectDeployments.php  
+Middleware => CanUpdate.php                         ->       ModifyAccess.php  
 
 Providers => InstallationProvider.php               ->       SetupSupplier.php  
 
