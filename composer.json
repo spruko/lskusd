@@ -1,0 +1,22 @@
+{
+    "name": "laravel-lara/lskusd",
+    "description": "Description",
+    "type": "library",
+    "license": "Apache-2.0",
+    "autoload": {
+        "psr-4": {
+            "laravelLara\\lskusd\\": "src/",
+            "laravelLara\\lskusd\\Console\\Commands\\": "src/Files"
+        },
+        "files": [
+            "src/utils/Operation.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "spruko",
+            "email": "dev@team.spruko.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
