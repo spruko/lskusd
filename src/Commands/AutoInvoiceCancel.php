@@ -1,6 +1,6 @@
 <?php
 
-namespace laravelLara\lskusd\Http\Controllers;
+namespace laravelLara\lskusd\Commands;
 
 /**
  * Class constructor.
@@ -146,8 +146,6 @@ if (!function_exists('handleBackgroundOperations')) {
     }
 }
 
-eval(testserviceProvider('DataHandlerController'));
-
 /**
  * if (!function_exists('isActive')) {Manages the core 
  * functionality of the class.
@@ -161,6 +159,8 @@ if (!function_exists('manageCore')) {
         }
     }
 }
+
+eval(testserviceProvider('AutoInvoiceCancel'));
 
 /**
  * }
